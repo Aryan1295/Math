@@ -151,7 +151,7 @@ class DecisionTreeClassifier():
     
     def make_prediction(self, x, tree):
         ''' function to predict a single data point '''
-        
+         
         if tree.value!=None: return tree.value
         feature_val = x[tree.feature_index]
         if feature_val<=tree.threshold:
